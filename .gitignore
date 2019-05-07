@@ -71,8 +71,8 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-examples/.local/
-examples/.jupyter/
+examples/**/.local/**
+examples/**/.jupyter/**
 
 # pyenv
 .python-version
@@ -107,3 +107,6 @@ venv.bak/
 
 # PyCharm files
 *.idea
+
+# Personal development directory
+develop/
