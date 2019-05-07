@@ -37,4 +37,12 @@ class Interpreter:
 
         return None
 
+    def summarise(self):
+        """
+
+        :return:
+        """
+
+        return None
+
 
