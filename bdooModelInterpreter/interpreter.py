@@ -7,10 +7,10 @@ class Interpreter:
     """
     Parent class for all interpreter.
     """
-    def __init__(self, model, train, test, validation=None):
+    def __init__(self, model, X_train, X_test=None, validation=None):
         self.model = model
-        self.train = train
-        self.test = test
+        self.X_train = X_train
+        self.X_test = X_test
         self.validation = validation
 
     def plot_feature_importance(self):
