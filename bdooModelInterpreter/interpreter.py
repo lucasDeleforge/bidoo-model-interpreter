@@ -1,7 +1,7 @@
 """
 Main interpreter
 """
-
+import seaborn as sns
 
 class Interpreter:
     """
