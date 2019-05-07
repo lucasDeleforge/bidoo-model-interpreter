@@ -73,6 +73,7 @@ target/
 .ipynb_checkpoints
 examples/**/.local/**
 examples/**/.jupyter/**
+examples/*.ipython*/
 
 # pyenv
 .python-version
