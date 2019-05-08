@@ -23,7 +23,7 @@ class Interpreter:
 
     def plot_feature_importance(self):
 
-        return None
+        return NotImplementedError
 
     def plot_data(self):
         """
@@ -31,7 +31,7 @@ class Interpreter:
         :return:
         """
 
-        return None
+        return NotImplementedError
 
     def plot_performance(self):
         """
@@ -39,7 +39,7 @@ class Interpreter:
         :return:
         """
 
-        return None
+        return NotImplementedError
 
     def summarise(self):
         """
@@ -47,7 +47,7 @@ class Interpreter:
         :return:
         """
 
-        return None
+        return NotImplementedError
 
     def init_plt_fig(self, rows, cols):
         """

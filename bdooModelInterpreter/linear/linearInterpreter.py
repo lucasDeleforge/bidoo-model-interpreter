@@ -11,6 +11,10 @@ class LinearInterpreter(Interpreter):
         self.y_test = y_test
         self.rsquare = None
 
+    def compute_ci(self):
+
+        return NotImplementedError
+
     def plot_weights(self, nb_features=20):
         """
         Plot weights of self.features, according to self.model.coef_
@@ -36,7 +40,7 @@ class LinearInterpreter(Interpreter):
 
     def compute_rsquare(self):
 
-        return None
+        return NotImplementedError
 
 
 
