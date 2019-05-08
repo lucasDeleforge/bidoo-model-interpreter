@@ -49,14 +49,14 @@ class Interpreter:
 
         return NotImplementedError
 
-    def init_plt_fig(self, rows, cols):
+    def init_plt_fig(self, rows, cols, width=7, height=5):
         """
         Standardization of figure creation.
         :param rows: Number of axis in rows
         :param cols: Number of axis in columns
         :return: matplotlib.pyplot.plt figures with rows*columns shape
         """
-        fig = plt.subplots(rows, cols, figsize=(7, 5), sharex=True)
+        fig = plt.subplots(rows, cols, figsize=(width, height), sharex=True)
 
         return fig
 
