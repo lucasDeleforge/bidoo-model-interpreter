@@ -21,26 +21,7 @@ class Interpreter:
         self.validation = validation
         self.features = self.X_train.columns.values
 
-    def plot_feature_importance(self, nb_features=20):
-        """
-        Plot importances of self.features, according to self.model.coef_
-        :param nb_features: Number of most important features to keep.
-        :return: matplotlib.pyplot.plt figures
-        """
-
-        df_plot = pd.DataFrame(np.column_stack((self.features, self.model.coef_)), columns=['feature', 'coef'],
-                               index=None)
-        df_plot['coef_abs'] = df_plot.coef.abs()
-        df_plot = df_plot.sort_values(by=['coef_abs'], ascending=False).head(nb_features)
-        df_plot.sort_values(by=['coef'], inplace=True)
-
-        fig = self.init_plt_fig(1,1)
-        sns.barplot(data=df_plot, x='feature', y='coef', palette="rocket", ax=fig[1])
-        fig[1].axhline(0, color="k", clip_on=False)
-        fig[1].set_ylabel("Sequential")
-
-        plt.tight_layout(h_pad=2)
-        plt.plot()
+    def plot_feature_importance(self):
 
         return None
 
